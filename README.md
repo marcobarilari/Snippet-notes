@@ -24,7 +24,9 @@ docker run -it --rm \
 -v /Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/derivatives/mriqc/:/out \
 poldracklab/mriqc:latest \
 /data /out --no-sub --verbose-reports group
+```
 
+```bash
 fmriprep-docker \
 /Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/raw \
 /Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/derivatives \
