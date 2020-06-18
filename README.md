@@ -7,7 +7,9 @@ ffmpeg -f avfoundation -list_devices true -i ""
 
 ffmpeg -f avfoundation -i "<screen device index>:<audio device index>" output.mkv
 
-ffmpeg -f avfoundation -r 30 -s "1280x720" -i "0" out.mp4
+ffmpeg -f avfoundation -r 30 -s "1280x720" -i "2" out.mkv
+
+ffmpeg -f avfoundation -r 30 -i "2" out.mkv
 ```
 
 ## fMRI analysis
