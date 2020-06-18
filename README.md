@@ -12,6 +12,15 @@ ffmpeg -f avfoundation -r 30 -s "1280x720" -i "2" out.mkv
 ffmpeg -f avfoundation -r 30 -i "2" out.mkv
 ```
 
+## Docker
+
+```bash
+docker images
+```
+```bash
+docker rmi 'IMAGE_ID'
+```
+
 ## fMRI analysis
 
 ```bash
