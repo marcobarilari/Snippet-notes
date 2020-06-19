@@ -1,5 +1,9 @@
 # Snippet-notes
 
+## terminal macOS
+
+
+
 ## ffmpeg video recording
 
 ```bash
