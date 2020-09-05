@@ -44,6 +44,19 @@ To analyse all files in a directory tree:
 mh_style src/
 ```
 
+## datalad
+
+datalad clone git@gin.g-node.org:/RemiGau/V5_high-res_pilot-1_source.git
+
+datalad siblings add --name gin --url 
+
+datalad save -m 'add mri data'
+
+datalad push --to gin
+
+datalad drop .
+
+
 ## ffmpeg video recording
 
 ```bash
