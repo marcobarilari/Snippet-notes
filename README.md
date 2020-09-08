@@ -48,13 +48,21 @@ mh_style src/
 
 datalad clone git@gin.g-node.org:/RemiGau/V5_high-res_pilot-1_source.git
 
-datalad siblings add --name gin --url 
+datalad siblings add --name gin --url
 
 datalad save -m 'add mri data'
 
 datalad push --to gin
 
 datalad drop .
+
+---
+
+copy a files
+
+cp -L file #grab annex content
+
+chmod +w file
 
 
 ## ffmpeg video recording
@@ -80,24 +88,28 @@ docker rmi 'IMAGE_ID'
 
 ## fMRI analysis
 
+input_dir=/Users/barilari/data/V5_high-res_pilot-1_raw/
+
+output_dir=/Users/barilari/data/V5_high-res_pilot-1/derivatives/mriqc/
+
 ```bash
 docker run -it --rm \
--v /Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/raw/:/data:ro \
--v /Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/derivatives/mriqc/:/out \
-poldracklab/mriqc:latest \
-/data /out --no-sub --verbose-reports participant --participant-label 01
+-v $input_dir:/data:ro \
+-v $output_dir:/out \
+poldracklab/mriqc:0.15.2 \
+/data /out --no-sub --verbose-reports participant --participant-label 001
 
 docker run -it --rm \
--v /Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/raw/:/data:ro \
--v /Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/derivatives/mriqc/:/out \
+-v $input_dir:/data:ro \
+-v $output_dir:/out \
 poldracklab/mriqc:latest \
 /data /out --no-sub --verbose-reports group
 ```
 
 ```bash
 fmriprep-docker \
-/Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/raw \
-/Users/barilari/data/tutorial_Andy-Brain-Book/ds000102-download/derivatives \
+$input_dir \
+$output_dir \
 --verbose --participant-label 01 \
 --fs-license-file $FREESURFER_HOME/license.txt
 ```
