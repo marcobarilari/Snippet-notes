@@ -60,7 +60,7 @@ datalad drop .
 
 copy a files
 
-cp -L file #grab annex content
+cp -L file fileto #grab annex content
 
 chmod +w file
 
