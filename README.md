@@ -112,8 +112,18 @@ poldracklab/mriqc:latest \
 
 ```bash
 fmriprep-docker \
-$input_dir \
-$output_dir \
+$dataset_dir/raw \
+$dataset_dir/derivatives \
+-i poldracklab/fmriprep:20.1.2 \
 --verbose --participant-label 01 \
 --fs-license-file $FREESURFER_HOME/license.txt
+
+docker run -ti --rm \
+    -v $input_dir:/data:ro \
+    -v $outputdir:/out \
+    -v $$FREESURFER_HOME/license.txt \
+    poldracklab/fmriprep:20.1.2 \
+    /data /out/out participant --participant-label 001
 ```
+
+`docker pull poldracklab/fmriprep:20.1.2`
