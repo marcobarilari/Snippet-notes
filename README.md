@@ -103,7 +103,13 @@ docker run -it --rm \
 -v $dataset_dir/raw:/data:ro \
 -v $dataset_dir/derivatives/mriqc:/out \
 poldracklab/mriqc:0.15.2 \
-/data /out --no-sub --verbose-reports participant --participant-label 01
+/data /out --no-sub --verbose-reports participant --participant-label 001
+
+docker run -it --rm \
+-v $input_dir:/data:ro \
+-v $output_dir/mriqc:/out \
+poldracklab/mriqc:0.15.2 \
+/data /out --no-sub --verbose-reports participant --participant-label 001
 
 docker run -it --rm \
 -v $input_dir:/data:ro \
