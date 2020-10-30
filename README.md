@@ -83,6 +83,14 @@ ffmpeg -f avfoundation -r 30 -s "1280x720" -i "2" out.mkv
 ffmpeg -f avfoundation -r 30 -i "2" out.mkv
 ```
 
+## Terminal
+
+```bash
+ls -lrt
+du -h lolcow_latest.sif #print the size
+pip list
+```
+
 ## Docker
 
 ```bash
@@ -90,6 +98,47 @@ docker images
 ```
 ```bash
 docker rmi 'IMAGE_ID'
+```
+
+## Singularity
+
+```bash
+singularity version
+singularity help
+singularity cache list -v
+singularity cache clean
+singularity inspect <sing-img.sif> #get metadata
+singularity inspect --runscript <sing-img.sif> #tells which scripts will be run
+singularity inspect -e <sing-img.sif>
+singularity inspect --deffile <sing-img.sif>
+
+singularity pull library://sylabsed/examples/lolcow
+singularity run lolcow_latest.
+singularity exec <sing-img.sif> <command eg `python version`> #to run binaries into singularity
+singularity shell <sing-img.sif> #to enter singularity and to stuff there
+  id #group information (?)
+  df #disk mounted
+
+```
+
+###mriqc
+
+```bash
+
+singularity run --cleanenv \
+--bind data/V5_high-res_pilot-1/raw:/data \
+--bind data/V5_high-res_pilot-1/derivatives/mriqc:/out \
+~/sing_images/mriqc_0.15.2.sif \
+/data /out participant \
+--participant_label pilot001 --no-sub
+
+singularity run --cleanenv \
+$HOME/data/V5_high-res_pilot-1/raw:/data \
+$HOME/data/V5_high-res_pilot-1/derivatives/mriqc:/out \
+$HOME/sing_images/mriqc_0.15.2.sif \
+/data /out participant \
+--participant_label pilot001 --no-sub
+
 ```
 
 ## fMRI analysis
