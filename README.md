@@ -46,7 +46,8 @@ mh_style src/
 
 ## datalad
 
-datalad datalad create -c text2git mydataset
+```
+datalad create -c text2git mydataset
 
 datalad clone git@gin.g-node.org:/RemiGau/V5_high-res_pilot-1_source.git
 
@@ -57,7 +58,7 @@ datalad save -m 'add mri data'
 datalad push --to gin
 
 datalad drop .
-
+```
 ---
 
 
@@ -150,9 +151,9 @@ output_dir=/Users/barilari/data/V5_high-res_pilot-1/derivatives/mriqc/
 ```bash
 docker run -it --rm \
 -v $dataset_dir/raw:/data:ro \
--v $dataset_dir/derivatives/mriqc:/out \
+-v $dataset_dir/report/mriqc:/out \
 poldracklab/mriqc:0.15.2 \
-/data /out --no-sub --verbose-reports participant --participant-label 001
+/data /out --no-sub --verbose-reports participant --participant-label pilot001
 
 docker run -it --rm \
 -v $input_dir:/data:ro \
