@@ -20,6 +20,43 @@ $HOME/sing_images/mriqc_0.15.2.sif \
 
 ```
 
+```bash
+singularity pull --name ~/sing_images/mriqc_0.15.2.sif docker://poldracklab/mriqc:0.15.2
+
+singularity run --cleanenv --bind ~/mriqc_sub-pilot001_ses-001_task-visualLocalizer/raw:/data --bind ~/mriqc_sub-pilot001_ses-001_task-visualLocalizer/derivatives/mriqc:/out \
+~/sing_images/mriqc_0.15.2.sif \
+/data /out participant \
+--participant_label pilot001
+```
+
+```bash
+singularity run --cleanenv \
+--bind ~/data/V5_high-res_pilot-1/raw:/data \
+--bind ~/data/V5_high-res_pilot-1/derivatives/mriqc:/out \
+~/sing_images/mriqc_0.15.2.sif \
+/data /out participant \
+--participant_label pilot001
+
+
+singularity run --cleanenv docker://poldracklab/mriqc:0.15.2 \
+data/V5_high-res_pilot-1/raw \
+data/V5_high-res_pilot-1/derivatives/mriqc \
+participant
+
+singularity run --cleanenv /work:/work sing_images/mriqc_0.15.0.sif \
+    data/V5_high-res_pilot-1/raw/ data/V5_high-res_pilot-1/derivatives/mriqc/ \
+    participant
+
+
+singularity run --cleanenv \
+--bind ~/data/V5_high-res_pilot-1/raw:/data \
+--bind ~/data/V5_high-res_pilot-1/derivatives/mriqc:/out \
+--bind ~/work:/work \
+~/sing_images/mriqc_0.15.2.sif \
+/data /out participant \
+--participant_label pilot001
+```
+
 ## fMRI analysis
 
 input_dir=/Users/barilari/data/V5_high-res_pilot-1_raw/
