@@ -67,6 +67,12 @@ output_dir=/Users/barilari/data/V5_high-res_pilot-1/derivatives/mriqc/
 docker run -it --rm \
 -v $dataset_dir/raw:/data:ro \
 -v $dataset_dir/report/mriqc:/out \
+poldracklab/mriqc:0.16.0 \
+/data /out --no-sub --verbose-reports participant --participant-label pilot001
+
+docker run -it --rm \
+-v $dataset_dir/raw:/data:ro \
+-v $dataset_dir/report/mriqc:/out \
 poldracklab/mriqc:0.15.2 \
 /data /out --no-sub --verbose-reports participant --participant-label pilot001
 
