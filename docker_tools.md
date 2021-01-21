@@ -93,8 +93,15 @@ poldracklab/mriqc:latest \
 fmriprep-docker \
 $dataset_dir/raw \
 $dataset_dir/derivatives \
--i poldracklab/fmriprep:20.1.2 \
---verbose --participant-label 01 \
+-i nipreps/fmriprep:20.2.1 \
+--verbose --participant-label pilot001 \
+--fs-license-file $FREESURFER_HOME/license.txt
+
+fmriprep-docker \
+$dataset_dir/raw \
+$dataset_dir/derivatives \
+-i nipreps/fmriprep:20.2.1 \
+--verbose --participant-label pilot001 \
 --fs-license-file $FREESURFER_HOME/license.txt
 
 docker run -ti --rm \
