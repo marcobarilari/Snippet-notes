@@ -10,6 +10,12 @@ ffmpeg -f avfoundation -i "<screen device index>:<audio device index>" output.mk
 ffmpeg -f avfoundation -r 30 -s "1280x720" -i "2" out.mkv
 
 ffmpeg -f avfoundation -r 30 -i "2" out.mkv
+
+ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4 #reduce video size
+
+ffmpeg -i input.mp4 -vcodec h264 -acodec aac output.mp4
+
+ffmpeg -i input.mp4 -vcodec libx265 -acodec aac -crf 23 output.mp4
 ```
 
 ## miss_hit (here)[https://github.com/florianschanda/miss_hit]
