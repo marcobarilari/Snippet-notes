@@ -67,9 +67,9 @@ output_dir=/Users/barilari/data/V5_high-res_pilot-1/derivatives/mriqc/
 
 ```bash
 docker run -it --rm \
--v $dataset_dir/raw:/data:ro \
--v $dataset_dir/report/mriqc:/out \
-poldracklab/mriqc:0.16.0 \
+-v $dataset_dir/ses-004_mriqc/raw:/data:ro \
+-v $dataset_dir/ses-004_mriqc/derivatives:/out \
+poldracklab/mriqc:0.16.1 \
 /data /out --no-sub --verbose-reports participant --participant-label pilot001
 
 docker run -it --rm \
@@ -97,7 +97,9 @@ $dataset_dir/raw \
 $dataset_dir/derivatives \
 -i nipreps/fmriprep:20.2.1 \
 --verbose --participant-label pilot001 \
---fs-license-file $FREESURFER_HOME/license.txt
+--fs-license-file $FREESURFER_HOME/license.txt \
+--output-space anat
+
 
 fmriprep-docker \
 $dataset_dir/raw \

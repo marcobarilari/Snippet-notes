@@ -1,5 +1,11 @@
 ## Docker
 
+start docker on linux
+
+```bash
+sudo service docker start
+```
+
 ```bash
 docker images
 ```
