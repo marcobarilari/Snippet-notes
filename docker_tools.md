@@ -8,7 +8,7 @@ Retrieve the image only
 
 `docker pull poldracklab/fmriprep:20.1.2`
 
-### sungularity
+### singularity
 
 ```bash
 
