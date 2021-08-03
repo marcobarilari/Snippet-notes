@@ -4,6 +4,12 @@ https://neurostars.org/t/fmriprep-on-symlinked-bids-dataset/18025/13
 
 ## mriqc
 
+Retrieve the image only
+
+`docker pull poldracklab/fmriprep:20.1.2`
+
+### singularity
+
 ```bash
 
 singularity run --cleanenv \
@@ -115,5 +121,3 @@ docker run -ti --rm \
     poldracklab/fmriprep:20.1.2 \
     /data /out/out participant --participant-label 001
 ```
-
-`docker pull poldracklab/fmriprep:20.1.2`
