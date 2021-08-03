@@ -4,6 +4,8 @@ https://neurostars.org/t/fmriprep-on-symlinked-bids-dataset/18025/13
 
 ## mriqc
 
+### sungularity
+
 ```bash
 
 singularity run --cleanenv \
