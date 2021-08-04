@@ -11,7 +11,9 @@ ffmpeg -f avfoundation -r 30 -s "1280x720" -i "2" out.mkv
 
 ffmpeg -f avfoundation -r 30 -i "2" out.mkv
 
-ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4 #reduce video size
+#reduce video size
+
+ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4
 
 ffmpeg -i input.mp4 -vcodec h264 -acodec aac output.mp4
 
