@@ -1,10 +1,25 @@
-# Terminal macOS
+# Snippet Terminal code
 
-## Terminal
+``` bash
+# monitor cpu usage and ongoing command
+#  inputs while running:
+#  - `o` order by eg `cpu`
+#  - `s` refresh interval eg `5` for every 4 seconds
+top
 
-```bash
-ls -lrt
-du -h lolcow_latest.sif #print the size
+# ADVANCED monitor cpu usage and ongoing command, it can be used through the mouse
+htop
+
+# list files and get info about: size; permission; etc
+ls -lrths
+
+# directories size
+# get the size of the folders without recursion and the time of last modification
+du -h --max-depth=1 --time
+# get the size of a folder recursively
+du -h folder-name
+
+# list pip packages installed
 pip list
 ```
 
