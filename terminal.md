@@ -13,14 +13,27 @@ htop
 # list files and get info about: size; permission; etc
 ls -lrths
 
+#change file and folder permission recursively
+chmod -R 777 /path/to/directory
+
+# list the hard drives and the size
+df -h
+
 # directories size
 # get the size of the folders without recursion and the time of last modification
 du -h --max-depth=1 --time
 # get the size of a folder recursively
-du -h folder-name
+du -h /directory-name
+
+# tree command for folder structure with depth  limit eg 3
+tree -d -L 3
+
+# remove not empty directories
+rm -rf /directory-name
 
 # list pip packages installed
 pip list
+
 ```
 
 ### .bash_profile
