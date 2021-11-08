@@ -38,3 +38,10 @@ To analyse all files in a directory tree:
 ```bash
 mh_style src/
 ```
+
+## macOS
+
+update all the softwares (from apple/macAppStore?)
+```bash
+softwareupdate --all --install --force
+```
