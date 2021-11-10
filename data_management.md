@@ -21,6 +21,17 @@ datalad drop .
 datalad get .
 ```
 
+to get information about the size of a given repo
+
+```
+datalad status --annex all
+
+# output example:
+
+24155 annex'd files (6.1 GB/50.9 GB present/total size)
+nothing to save, working tree clean
+```
+
 ## Terminal
 
 Copy a simulink files
