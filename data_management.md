@@ -19,6 +19,8 @@ datalad push --to gin
 datalad drop .
 
 datalad get .
+
+datalad subdatasets --set-property url git@gin.g-node.org:/marcobarilari/analysis_high-res_pilot001_ses-006_derivatives-cpp_spm-stats.git cpp_spm-stats/
 ```
 
 to get information about the size of a given repo
@@ -57,7 +59,7 @@ alias dl="datalad"
 ```
 
 
-First make a new empty directory: 
+First make a new empty directory:
 
 ```
 mkdir PitchFT_raw
