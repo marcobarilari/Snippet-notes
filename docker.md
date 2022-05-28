@@ -38,7 +38,7 @@ docker ps
 - enter a running image
 
 ```bash
-docker exec -ti CONTAINER_ID bash
+docker exec -it CONTAINER_ID bash
 ```
 
 - stop a running image
