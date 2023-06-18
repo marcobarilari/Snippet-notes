@@ -19,6 +19,8 @@ singularity shell <sing-img.sif> #to enter singularity and to stuff there
   df #disk mounted
 ```
 
+module load singularity
+
 ### singularity
 
 ```bash
