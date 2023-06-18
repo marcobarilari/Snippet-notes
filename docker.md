@@ -29,3 +29,20 @@ docker rmi [--force] 'IMAGE_ID'
 ```bash
 docker pull poldracklab/fmriprep:20.1.2
 ```
+
+- show running containers
+
+```bash
+docker ps
+```
+- enter a running image
+
+```bash
+docker exec -it CONTAINER_ID bash
+```
+
+- stop a running image
+
+```bash
+docker stop CONTAINER_ID
+```
