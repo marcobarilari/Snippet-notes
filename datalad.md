@@ -3,6 +3,9 @@
 ## Routine checks
 
 ```
+# faster status check when there are big subadatasets (what it truly does is not clear yet))
+datalad status -e commit
+
 # list which files are where
 git anex list
 ```
