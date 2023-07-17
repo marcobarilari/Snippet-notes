@@ -16,8 +16,11 @@ git anex list
 # go back to last commit
 git reset --mixed 11b4c2711602b6020df90eec438c09bb22e8567f
 
-# drop last changes (untracked)
+# drop last changes only for untracked files
 git clean -df && git checkout -- .
+
+# drop any modification
+git reset --hard
 
 # reset a file to last saved changes
 git reset -- path_to_file
