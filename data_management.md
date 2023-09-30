@@ -46,6 +46,12 @@ copy a folder:
 
 `cp -L -R -f folder folder-to`
 
+copy files in subfolder maintaining folder structure
+
+dependency: `brew install coreutils`
+
+gcp --parents ~/stats/*/*FWHM-0*/*mask* .
+
 make a file 'writable'
 `chmod +w file`
 

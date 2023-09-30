@@ -1,5 +1,7 @@
 # Snippet Terminal code
 
+check this https://medium.com/macoclock/9-mac-homebrew-tools-youve-never-thought-you-needed-96ff07291592
+
 ``` bash
 # monitor cpu usage and ongoing command
 #  inputs while running:
@@ -28,11 +30,17 @@ du -h /directory-name
 # tree command for folder structure with depth  limit eg 3
 tree -d -L 3
 
+# tree command that sort of print how many files per folder
+tree --filelimit=15
+
 # remove not empty directories
 rm -rf /directory-name
 
 # list pip packages installed
 pip list
+
+# check internet speed 
+networkQuality
 
 ```
 
