@@ -18,26 +18,26 @@ docs_dir: docs
 
 # Pages
 nav:
-  - Welcome: README.md
-  - Code and Data management:
-    - Git: git.md
-    - Data management: data_management.md
-    - Datalad: datalad.md
-  - Containers:
-    - Docker and singularity: docker_singularity.md
-    - Docker: docker.md
-  - Scripting languages:
-    - Bash: bash.md
-    - Matlab: matlab.md
-    - R: R.md
-  - Analyses pipelines:
-    - fmriprepr and mriqc: fmriprep-mriqc_docker.md
-    - fresurfer: freesurfer.md
-    - spm: spm.md
-  - Other:
-    - mac: mac_tools.md
-    - terminal: terminal.md
-    - vim: vim.md
+- Welcome: README.md
+- Code and Data management:
+  - Git: git.md
+  - Data management: data_management.md
+  - Datalad: datalad.md
+- Containers:
+  - Docker and singularity: docker_singularity.md
+  - Docker: docker.md
+- Scripting languages:
+  - Bash: bash.md
+  - Matlab: matlab.md
+  - R: R.md
+- Analyses pipelines:
+  - fmriprepr and mriqc: fmriprep-mriqc_docker.md
+  - fresurfer: freesurfer.md
+  - spm: spm.md
+- Other:
+  - mac: mac_tools.md
+  - terminal: terminal.md
+  - vim: vim.md
 
 
 # list of extension
