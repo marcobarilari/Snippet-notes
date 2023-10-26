@@ -18,9 +18,9 @@ docs_dir: doc
 
 # Pages
 nav:
-- Welcome: index.md
+- Welcome: README.md
 - Code and Data management:
-  - git: git.md
+  - Git: git.md
   - Data management: data_management.md
   - Datalad: datalad.md
 - Containers:
