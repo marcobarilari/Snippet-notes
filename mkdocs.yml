@@ -1,6 +1,6 @@
 ---
 # Project information
-site_name: Snippet Notes
+site_name: Snippet-Notes
 repo_name: marcobarilari/Snippet-notes
 repo_url: https://github.com/marcobarilari/Snippet-notes
 # docs_dir: alternative_path # docs/ is the default folder
@@ -18,9 +18,9 @@ docs_dir: doc
 
 # Pages
 nav:
-- Welcome: index.md
+- Welcome: README.md
 - Code and Data management:
-  - git: git.md
+  - Git: git.md
   - Data management: data_management.md
   - Datalad: datalad.md
 - Containers:

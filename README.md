@@ -2,7 +2,7 @@
 
 Repo of copy pasted 1 line codes that is recursively googled
 
-Read it here: [https://cpp-lln-lab.github.io/CPP_HPC/](https://cpp-lln-lab.github.io/CPP_HPC/)
+Read it here: [https://marcobarilari.github.io/Snippet-notes/](https://marcobarilari.github.io/Snippet-notes/)
 
 ## Feel free to contribute!
 
