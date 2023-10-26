@@ -1,0 +1,54 @@
+---
+# Project information
+site_name: Snippet Notes
+repo_name: marcobarilari/Snippet-notes
+repo_url: https://github.com/marcobarilari/Snippet-notes
+# docs_dir: alternative_path # docs/ is the default folder
+copyright: MIT
+
+# This will use Material them
+theme:
+  name: material
+  language: en
+  palette:
+    primary: light blue
+    accent: light blue
+
+docs_dir: doc
+
+# Pages
+nav:
+- Welcome: index.md
+- Code and Data management:
+  - git: git.md
+  - Data management: data_management.md
+  - Datalad: datalad.md
+- Containers:
+  - Docker and singularity: docker_singularity.md
+  - Docker: docker.md
+- Scripting languages:
+  - Bash: bash.md
+  - Matlab: matlab.md
+  - R: R.md
+- Analyses pipelines:
+  - fmriprepr and mriqc: fmriprep-mriqc_docker.md
+  - fresurfer: freesurfer.md
+  - spm: spm.md
+- Other:
+  - mac: mac_tools.md
+  - terminal: terminal.md
+  - vim: vim.md
+
+
+# list of extension
+markdown_extensions:
+- admonition
+- pymdownx.details
+- toc:
+    anchorlink: true
+    permalink: '#'
+- pymdownx.tasklist:
+    custom_checkbox: true
+
+plugins:
+- include-markdown
