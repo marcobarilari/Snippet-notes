@@ -14,7 +14,7 @@ theme:
     primary: light blue
     accent: light blue
 
-docs_dir: doc
+docs_dir: docs
 
 # Pages
 nav:
