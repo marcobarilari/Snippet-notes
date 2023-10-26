@@ -2,17 +2,29 @@
 
 Repo of copy pasted 1 line codes that is recursively googled
 
-## CONTENT
+Read it here: [https://cpp-lln-lab.github.io/CPP_HPC/](https://cpp-lln-lab.github.io/CPP_HPC/)
 
-1. [bash](./bash.md)
-2. [data management](./data_management.md)
-3. [datalad](./datalad.md)
-4. [docker_singularity](./docker_singularity.md)
-5. [docker](./docker.md)
-6. [fmriprep-mriqc docker](./fmriprep-mriqc_docker.md)
-7. [freesurfer](./freesurfer.md)
-8. [git](./git.md)
-9. [mac tools](./mac_tools.md)
-10. [R](./R.md)
-11. [SPM](./spm.md)
-12. [terminal](./terminal.md)
+## Feel free to contribute!
+
+### Edit locally
+
+1. fork this repository
+2. clone your forked repository
+3. install the dependencies via:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. create a branch
+5. make your changes in the respective markdown file in the `doc` folder
+6. visualize your changes by deploying a website preview via:
+
+```bash
+mkdocs serve
+```
+
+and view the preview here [http://127.0.0.1:8000/welcome](http://127.0.0.1:8000/welcome)
+
+7. push your changes to your forked repository
+8. open a pull request
