@@ -6,16 +6,6 @@ repo_url: https://github.com/marcobarilari/Snippet-notes
 # docs_dir: alternative_path # docs/ is the default folder
 copyright: MIT
 
-# This will use Material them
-theme:
-  name: material
-  language: en
-  palette:
-    primary: light blue
-    accent: light blue
-  features:
-    - navigation.tabs
-
 docs_dir: docs
 
 # Pages
@@ -41,6 +31,32 @@ nav:
   - terminal: terminal.md
   - vim: vim.md
 
+theme:
+  name: material
+  features:
+  - navigation.top
+  - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+  palette:
+    # Palette toggle for automatic mode
+  - media: (prefers-color-scheme)
+    toggle:
+      icon: material/brightness-auto
+      name: Switch to light mode
+    # Palette toggle for light mode
+  - media: '(prefers-color-scheme: light)'
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+    # Palette toggle for dark mode
+  - media: '(prefers-color-scheme: dark)'
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to system preference
 
 # list of extension
 markdown_extensions:
