@@ -1,3 +1,5 @@
+# spm
+
 ## Read and write niftis
 
 ```matlab
