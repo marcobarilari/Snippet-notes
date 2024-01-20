@@ -6,3 +6,10 @@
 /usr/local/MATLAB/R2017a/bin/matlab \
     -nodisplay -nosplash -nodesktop \
     -r "run('step_1_preprocess.m');exit;"
+
+## parallel toolbox
+
+```matlab
+# decide how many workers you want
+parpool(2);
+```
