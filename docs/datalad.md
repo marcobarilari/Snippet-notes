@@ -37,7 +37,7 @@ git checkout master
 git merge --ff-only last-commit-hash-number-from-git reflog
 ```
 
-## specific errors
+### specific errors
 
 ### pushing
 
@@ -58,6 +58,10 @@ fatal: the remote end hung up unexpectedly
 git annex unused
 
 git annex dropunused all
+
+# datalad is stuper slow
+# it cpould be a problem of indexing especially if moving from one OC to another. This routing command might initiate a re-indexing
+git status
 ```
 
 ## Other source of snippet codes
