@@ -35,6 +35,7 @@ nav:
   - fmriprepr and mriqc: fmriprep-mriqc_docker.md
   - fresurfer: freesurfer.md
   - spm: spm.md
+  - fsl: fsl.md
 - Other:
   - mac: mac_tools.md
   - terminal: terminal.md
