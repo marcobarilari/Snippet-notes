@@ -30,11 +30,14 @@ git reset -- path_to_file
 git restore path/to/file
 
 # There is no active branch, cannot determine remote branch
+# OR
+# Saved changes on a "detached" branch and switching to master "deleted what just saved
+
 git reflog 
 
-git checkout master
+git checkout master # or main
 
-git merge --ff-only last-commit-hash-number-from-git reflog
+git merge --ff-only hash_number_commit_save_in_no_specific_branch 
 ```
 
 ### specific errors
