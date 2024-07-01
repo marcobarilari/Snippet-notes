@@ -23,7 +23,7 @@ nav:
 - Code and Data management:
   - Git: git.md
   - Data management: data_management.md
-  - Datalad: datalad.md
+- Datalad: datalad.md
 - Containers:
   - Docker and singularity: docker_singularity.md
   - Docker: docker.md
