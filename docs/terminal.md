@@ -42,6 +42,10 @@ pip list
 # check internet speed 
 networkQuality
 
+# file copying preserving subfolder structure
+cd  path/where/tree-to-copy/starts
+cp -v --parents */*/*/*pattern*.nii destiantion
+
 ```
 
 ### .bash_profile
