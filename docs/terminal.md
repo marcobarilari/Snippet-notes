@@ -24,6 +24,8 @@ df -h
 # directories size
 # get the size of the folders without recursion and the time of last modification
 du -h --max-depth=1 --time
+# on mac --max-depth does not work
+du -hd1 
 # get the size of a folder recursively
 du -h /directory-name
 
