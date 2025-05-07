@@ -60,6 +60,11 @@ ffmpeg \
     output.mp4
 ```
 
+### ffmpeg video trimming
+```bash
+ffmpeg -i part_2_talk_2_talk_3_compressed.mp4 -ss 00:41:05 -to 01:13:32 -c copy part_3_talk_3_compressed.mp4
+```
+
 ### .bash_profile
 
 ```bash_profile
