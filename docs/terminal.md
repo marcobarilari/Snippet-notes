@@ -50,6 +50,16 @@ cp -v --parents */*/*/*pattern*.nii destiantion
 
 ```
 
+## ffmpreg video compression
+```bash
+ffmpeg \
+    -i input.mov \
+    -vcodec libx265 \
+    -crf 22 \
+    -preset slow \
+    output.mp4
+```
+
 ### .bash_profile
 
 ```bash_profile
