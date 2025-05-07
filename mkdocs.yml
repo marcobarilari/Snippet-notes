@@ -3,7 +3,7 @@
 site_name: Snippet-Notes
 repo_name: marcobarilari/Snippet-notes
 repo_url: https://github.com/marcobarilari/Snippet-notes
-edit_uri: ./edit/main/docs/
+edit_uri: ./edit/master/docs/
 # docs_dir: alternative_path # docs/ is the default folder
 copyright: MIT
 
