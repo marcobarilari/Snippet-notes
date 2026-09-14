@@ -1,5 +1,12 @@
 # Snippet Terminal code
 
+## VPN
+
+Relaunch something to make open vpn work
+```bash
+ sudo launchctl load -w /Library/LaunchDaemons/org.openvpn.client.plist
+```
+
 check this https://medium.com/macoclock/9-mac-homebrew-tools-youve-never-thought-you-needed-96ff07291592
 
 ``` bash
